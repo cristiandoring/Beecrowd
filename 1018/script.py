@@ -1,11 +1,11 @@
 N = int(input(''))
 
 cem = N//100
-cinquenta = ((N//50) - cem*1)
-vinte = (N//20 - cem - cinquenta)-cem-(cinquenta*1/2)
-dez = N//10 - (cem*100 + cinquenta*50 + vinte*20)
-cinco = N//5 -(cem*100 + cinquenta*50 + vinte*20 + dez*10)
-dois = N//2 - (cem*100 + cinquenta*50 + vinte*20 + dez*10 + cinco*5)
+cinquenta = (N - cem*100)//50
+vinte = (N - cem*100 - cinquenta*50)//20
+dez = (N - cem*100 - cinquenta*50 - vinte*20)//10
+cinco = (N - cem*100 - cinquenta*50 - vinte*20-dez*10)//5
+dois = (N - cem*100 - cinquenta*50 - vinte*20-dez*10-cinco*5)//2
 um = N - (cem*100 + cinquenta*50 + vinte*20 + dez*10 + cinco*5 + dois*2)
 
 print(N)
