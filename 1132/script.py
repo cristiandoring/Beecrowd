@@ -1,4 +1,5 @@
 soma = 0
+
 x = int(input(''))
 y = int(input(''))
 
